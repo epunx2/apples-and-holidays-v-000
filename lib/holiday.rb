@@ -74,11 +74,12 @@ def all_supplies_in_holidays(holiday_hash)
       holidays = holiday.to_s.capitalize
       puts "  #{holidays}: "
       supply.each do |info|
+        supply_info = info.to_s.capitalize
         if i == 0
-          puts "#{info[i]}"
+          puts "#{supply_info[i]}"
           i += 1
         else
-          puts ", #{info[i]}"
+          puts ", #{supply_info[i]}"
           i += 1
         end
       end
