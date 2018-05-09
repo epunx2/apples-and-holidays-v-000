@@ -82,6 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
         i += 1
       end
       puts "  #{holidays}: #{supply_info}"
+      supply_info = ""
     end
   end
 
