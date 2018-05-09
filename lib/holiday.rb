@@ -75,9 +75,17 @@ def all_supplies_in_holidays(holiday_hash)
       holidays = holiday.to_s.split("_").map(&:capitalize).join(" ")
       supply.each do |info|
         if i == supply.length || supply.length == 1
-          supply_info << info.to_s.split(" ").map(&:capitalize).join(" ")
+          if info == "BBQ"
+            supply_info << info
+          else
+            supply_info << info.to_s.split(" ").map(&:capitalize).join(" ")
+          end
         else
-          supply_info << info.to_s.split(" ").map(&:capitalize).join(" ") + ", "
+          f info == "BBQ"
+            supply_info << info
+          else
+            supply_info << info.to_s.split(" ").map(&:capitalize).join(" ") + ", "
+          end
         end
         i += 1
       end
