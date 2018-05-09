@@ -78,8 +78,8 @@ def all_supplies_in_holidays(holiday_hash)
           supply_info << info.to_s.capitalize
         else
           supply_info << info.to_s.capitalize + ", "
-          i += 1
         end
+        i += 1
       end
       puts "  #{holidays}: #{supply_info}"
     end
