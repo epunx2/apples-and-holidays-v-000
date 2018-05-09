@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  i = 0
+  i = 1
   supply_info = ""
   holiday_hash.each do |season, data|
     seasons = season.to_s.capitalize
