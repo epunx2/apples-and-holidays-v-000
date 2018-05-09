@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
       supply.each do |info|
         if i == supply.length
           supply_info << info.to_s.capitalize
-        elsif i == 0
+        else
           supply_info << info.to_s.capitalize + ", "
         end
       end
