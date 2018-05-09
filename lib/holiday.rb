@@ -77,7 +77,7 @@ def all_supplies_in_holidays(holiday_hash)
           if i == 0
             print "#{info[i]}"
             i += 1
-          else:
+          else
             print ", #{info[i]}"
             i += 1
         end
