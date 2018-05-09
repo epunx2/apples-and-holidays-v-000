@@ -81,7 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
             supply_info << info.to_s.split(" ").map(&:capitalize).join(" ")
           end
         else
-          f info == "BBQ"
+          if info == "BBQ"
             supply_info << info
           else
             supply_info << info.to_s.split(" ").map(&:capitalize).join(" ") + ", "
